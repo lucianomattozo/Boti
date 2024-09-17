@@ -35,14 +35,15 @@ p {
 .cta-button {
     background-color: #FFD700;
     color: #333;
-    padding: 15px 35px;
+    padding: 12px 30px;
     text-decoration: none;
     font-size: 1.2em;
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    display: inline-block; /* Adicionado para garantir que o botão se ajuste ao conteúdo */
-    margin: 0 auto; /* Adicionado para centralizar o botão em containers flexíveis */
-    text-align: center; /* Adicionado para centralizar o texto no botão */
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 300px;
 }
 
 .cta-button:hover {
@@ -152,8 +153,8 @@ footer {
 /* Estilo específico para dispositivos móveis */
 @media (max-width: 768px) {
     .cta-button {
-        width: 100%; /* Botão ocupa toda a largura disponível */
-        padding: 12px 20px; /* Ajusta o padding para telas menores */
-        font-size: 1.1em; /* Ajusta o tamanho da fonte */
+        width: auto;
+        padding: 10px 20px;
+        font-size: 1.1em;
     }
 }
