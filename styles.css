@@ -1,3 +1,4 @@
+/* Geral */
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #1c1c1c;
@@ -40,11 +41,22 @@ p {
     font-size: 1.2em;
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Ajusta a largura do botão para o conteúdo */
+    margin: 20px 0; /* Espaçamento vertical */
+    text-transform: uppercase; /* Maiúsculas para uma aparência mais forte */
+    font-weight: bold; /* Negrito para maior destaque */
+    border: 2px solid #FFD700; /* Borda para mais definição */
 }
 
 .cta-button:hover {
     background-color: #e5b300;
+    border-color: #e5b300; /* Altera a cor da borda no hover */
     transform: scale(1.05);
+}
+
+.cta-button:focus {
+    outline: none; /* Remove o outline padrão do navegador */
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.5); /* Adiciona um contorno dourado para foco */
 }
 
 main {
@@ -127,59 +139,4 @@ footer {
     width: 100%;
     position: relative;
     bottom: 0;
-}
-
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
-
-    .cta-button {
-        font-size: 1em;
-        padding: 10px 25px;
-    }
-
-    .about h2 {
-        font-size: 2em;
-    }
-
-    .plan h2 {
-        font-size: 2em;
-    }
-
-    ul li {
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 0.9em;
-    }
-
-    .cta-button {
-        font-size: 0.9em;
-        padding: 8px 20px;
-    }
-
-    .about h2 {
-        font-size: 1.5em;
-    }
-
-    .plan h2 {
-        font-size: 1.5em;
-    }
-
-    ul li {
-        font-size: 0.9em;
-    }
 }
