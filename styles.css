@@ -40,6 +40,9 @@ p {
     font-size: 1.2em;
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Adicionado para garantir que o botão se ajuste ao conteúdo */
+    margin: 0 auto; /* Adicionado para centralizar o botão em containers flexíveis */
+    text-align: center; /* Adicionado para centralizar o texto no botão */
 }
 
 .cta-button:hover {
@@ -55,7 +58,7 @@ main {
 .about, .what-is {
     text-align: center;
     margin: 50px auto;
-    max-width: 800px; /* Adicionado para centralizar o texto e garantir boa leitura */
+    max-width: 800px;
 }
 
 .about h2, .what-is h2 {
@@ -68,8 +71,8 @@ main {
 .about p, .what-is p {
     font-size: 1.2em;
     line-height: 1.6;
-    margin: 0 auto 20px; /* Ajustado para centralizar o texto e espaçar corretamente */
-    max-width: 700px; /* Adicionado para limitar a largura do texto e manter a leitura confortável */
+    margin: 0 auto 20px;
+    max-width: 700px;
 }
 
 .what-is {
@@ -144,4 +147,13 @@ footer {
     width: 100%;
     position: relative;
     bottom: 0;
+}
+
+/* Estilo específico para dispositivos móveis */
+@media (max-width: 768px) {
+    .cta-button {
+        width: 100%; /* Botão ocupa toda a largura disponível */
+        padding: 12px 20px; /* Ajusta o padding para telas menores */
+        font-size: 1.1em; /* Ajusta o tamanho da fonte */
+    }
 }
