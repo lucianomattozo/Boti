@@ -25,11 +25,13 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3.5em;
     margin-bottom: 15px;
+    color: #FFD700; /* Mantém a cor consistente com o header */
 }
 
 p {
     font-size: 1.25em;
     margin-bottom: 25px;
+    color: #e0e0e0; /* Cor do texto para manter a consistência */
 }
 
 .cta-button {
